@@ -1,5 +1,8 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
+{{!--{{welcome-page}}--}}
 {{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<h1 class="text-blue">Ember League Table - Tutorial</h1>
+{{game-simulator}}
+{{game-results}}
+{{league-table}}
+<GameResults @games={{this.game-simulator.games}}/>
